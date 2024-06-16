@@ -33,7 +33,7 @@ body {
 }
 
 .navbar-brand {
-    color:rgb(221, 255, 0) !important; /* Ensure white text color */
+    color:rgb(225, 255, 0) !important; /* Ensure white text color */
     font-size: 4rem;
     font-weight: bold;
 }
@@ -53,7 +53,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color:rgb(221, 255, 0); /* Change this color to your desired background color */
+    background-color:rgb(225, 255, 0); /* Change this color to your desired background color */
 }
 
 .card:hover {
