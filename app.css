@@ -1,0 +1,148 @@
+/* Global reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #0d2338; /* Light gray background */
+}
+
+.background {
+    background: url('./images/Shelby1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px); /* Adjust blur strength as needed */
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Ensure content sits above background */
+    z-index: 1; /* Ensure content is above the blurred background */
+    background-color: transparent; /* Add a semi-transparent background to improve readability */
+}
+
+.navbar-brand {
+    color:rgb(221, 255, 0) !important; /* Ensure white text color */
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color:#20a05ae1 !important; /* Ensure transparent background */
+}
+
+.card-wrapper {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color:rgb(221, 255, 0); /* Change this color to your desired background color */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-circle-image {
+    width: 150px; /* Fixed size for circle */
+    height: 150px;
+    border-radius: 50%; /* Ensure it's a circle */
+    overflow: hidden;
+}
+
+.custom-circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Centering the .dropzone within its column */
+.col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropzone {
+    width: 100%;
+    max-width: 250px; /* Optional: Set a maximum width */
+    border: 2px dashed #ccc;
+    background-color: #20a05ae1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropzone .dz-message {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.error {
+    font-size: 1.2rem;
+    color: #dc3545; /* Red color for error messages */
+    text-align: center;
+    margin-top: 20px;
+    /* Use ml-auto to push it to the right */
+    margin-left: auto;
+}
+
+#classTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#classTable th, #classTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#classTable th {
+    background-color: #007bff; /* Blue header */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#classTable td {
+    background-color: #ffffff;
+}
+
+#classTable tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row color */
+}
