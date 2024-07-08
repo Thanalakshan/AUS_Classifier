@@ -1,4 +1,3 @@
-/* Global reset and base styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +7,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #0d2338; /* Light gray background */
+    background-color: #0d2338;
 }
 
 .background {
@@ -19,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(3px); /* Adjust blur strength as needed */
+    filter: blur(3px);
     z-index: -1;
 }
 
@@ -27,19 +26,19 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    position: relative; /* Ensure content sits above background */
-    z-index: 1; /* Ensure content is above the blurred background */
-    background-color: transparent; /* Add a semi-transparent background to improve readability */
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
 }
 
 .navbar-brand {
-    color:rgb(225, 255, 0) !important; /* Ensure white text color */
+    color:rgb(225, 255, 0) !important;
     font-size: 4rem;
     font-weight: bold;
 }
 
 .navbar {
-    background-color:#20a05ae1 !important; /* Ensure transparent background */
+    background-color:#20a05ae1 !important;
 }
 
 .card-wrapper {
@@ -53,7 +52,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color:rgb(225, 255, 0); /* Change this color to your desired background color */
+    background-color:rgb(225, 255, 0);
 }
 
 .card:hover {
@@ -61,16 +60,16 @@ body {
 }
 
 .custom-circle-image {
-    width: 150px; /* Fixed size for circle */
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* Ensure it's a circle */
+    border-radius: 50%;
     overflow: hidden;
 }
 
 .custom-circle-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio */
+    object-fit: cover;
 }
 
 .card-body {
@@ -89,7 +88,6 @@ body {
     color: #555;
 }
 
-/* Centering the .dropzone within its column */
 .col-sm-4 {
     display: flex;
     flex-direction: column;
@@ -99,7 +97,7 @@ body {
 
 .dropzone {
     width: 100%;
-    max-width: 250px; /* Optional: Set a maximum width */
+    max-width: 250px;
     border: 2px dashed #ccc;
     background-color: #20a05ae1;
     padding: 20px;
@@ -114,10 +112,9 @@ body {
 
 .error {
     font-size: 1.2rem;
-    color: #dc3545; /* Red color for error messages */
+    color: #dc3545;
     text-align: center;
     margin-top: 20px;
-    /* Use ml-auto to push it to the right */
     margin-left: auto;
 }
 
@@ -134,7 +131,7 @@ body {
 }
 
 #classTable th {
-    background-color: #007bff; /* Blue header */
+    background-color: #007bff;
     color: #ffffff;
     font-weight: bold;
 }
@@ -144,5 +141,5 @@ body {
 }
 
 #classTable tr:nth-child(even) {
-    background-color: #f2f2f2; /* Alternate row color */
+    background-color: #f2f2f2;
 }
