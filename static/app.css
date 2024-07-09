@@ -121,25 +121,30 @@ body {
 #classTable {
     width: 100%;
     margin-top: 20px;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the table */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners appear correctly */
 }
 
 #classTable th, #classTable td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+    padding: 20px;
+    border: none; /* Remove default borders */
+    text-align: center; /* Center align text */
 }
 
 #classTable th {
-    background-color: #007bff;
+    background-color: #20a05ae1;
     color: #ffffff;
+    font-size: 2rem; /* Larger font size for title */
     font-weight: bold;
+    text-transform: uppercase; /* Uppercase headers */
 }
 
 #classTable td {
-    background-color: #ffffff;
-}
-
-#classTable tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: rgb(225, 255, 0); /* Light gray background for table cells */
+    font-size: 2rem;
+    border-bottom: 1px solid #dee2e6; /* Light border between rows */
 }
